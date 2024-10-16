@@ -1,6 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    /* border: 2px solid white; */
+}
 :root{
     --green-clr : #dffe02;
     --gray-clr : #898989;
     --dark-blue-clr : #171c22;
+}
+.bg-green{
+    background: var(--green-clr);
+}
+.bg-dark-blue{
+    background-color: var(--dark-blue-clr);
+}
+.txt-green{
+    color: var(--green-clr);;
+}
+.txt-gray{
+    color: var(--gray-clr);
+}
+p{
+    font-size: .8rem;
+}
+.navbar-logo{
+    width: 8rem;
+}
+.mybtn{
+    border: .1rem solid var(--green-clr) !important; 
+    padding: .5rem 1.5rem;
+}
+.mybtn:hover{
+    background-color: transparent;
+    color: var(--green-clr);
+}
+.navbar-toggler-icon{
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+width: 2.2rem;
+}
+.image-container{
+    width: 33vw;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border-top: 1rem solid white;
+   border-bottom: 1rem solid white;
+   background-image: url(/assets/images/profile.png);
+   background-repeat: no-repeat;
+   background-position:  center;
+   background-size: cover;
+   box-shadow: 
+   0 0 1rem 1px white, 
+   inset 0 0 1rem 1px white,
+   0 0 2rem .3rem var(--green-clr), 
+   inset 0 0 2rem .3rem var(--green-clr);
+}
+.heroSection {
+    min-height: 85vh;
+    
+}
+.heroSection h1{
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+.heroSection p,span{
+    letter-spacing: 2px;
+}
+.hello-im{
+    letter-spacing: 8px;
+    padding-left: 2px;
+}
+.introduce{
+    margin-bottom: 0px !important;
+}
+.hover-card{
+    transition: all .3s ease;
+}
+.hover-card:hover{
+    transform: scale(1.1);
 
+    
+}
+.hover-card:hover *{
+    background-color: var(--green-clr);
+    color: var(--dark-blue-clr) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:680px)
+{
+   .heroSection h1{
+        font-size: 2.2rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .txt-center{
+    text-align: center;
+    }
+    .heroSection p{
+        margin-top: 10px ;
+        margin-bottom: 16px ;
+        text-align: center;
+    }
+    .diff-screen{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mybtn{
+        margin-bottom: 24px;
+    }
+    .image-container{
+        margin-top: 20px;
+        width: 70vw;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 32px;
+        padding-inline: 20px;
+    }
+    .aboutimg{
+        text-align: center;
+    }
+    .aboutimg img{
+        max-width: 80%;
+    }
+}
+@media screen and (min-width : 681px) and (max-width:767px)
+{
+    .heroSection h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }  
+    .diff-screen{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    .heroSection p{
+        margin-top: 10px ;
+        margin-bottom: 16px ;
+        text-align: center;
+    }
+    .image-container{
+        margin-top: 36px;
+        width: 100%
+    }
+    .intro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 32px;
+        padding-inline: 20px;
+    }
+    .txt-center{
+        text-align: center;
+    }
+    .aboutimg{
+        text-align: center;
+    }
+    .aboutimg img{
+        width: 100%;
+    }
+  
+}
+@media screen and (min-width : 767px) and (max-width:992px)
+{
+    .heroSection h1{
+        width: 100%;
+        font-size: 3rem;
+        margin: 6px 0 20px 0;
+        }
+        .aboutimg{
+            text-align: center;
+        }
+        .aboutimg img{
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .aboutrow{
+            flex-direction: row-reverse;
+            align-items: center;
+            margin-top: 100px;
+            
+        }
+      .mybtn{
+        margin-top: 20px;
+      }
+    
+}
+@media screen and (min-width : 992px) 
+{
+    .heroSection h1{
+        width: 100%;
+        font-size: 3.49rem;
+        margin: 10px 0 20px 0;
+   
+}
+.aboutimg{
+    text-align: center;
+}
+.aboutimg img{
+    max-width: 100%;
+    margin-top: 20px;
+}
+.aboutrow{
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 100px;
+    
+}
+.mybtn{
+ margin-top: 20px;
+}
 }

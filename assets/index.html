@@ -1,40 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Portfolio</title>
-    <link rel="stylesheet" href="/assets/style/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="stylesheet" href="/assets/style/style.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
+
+<body class="bg-black">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container py-3">
+            <a class="navbar-brand" href="#"><img class="navbar-logo" src="/assets/images/logo.png" alt="Logo"></a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-4 ">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Contact</a>
+                    </li>
+                </ul>
+                <a class="btn rounded-0 text-uppercase bg-green mybtn" href="#" role="button">Let's Talk</a>
+            </div>
         </div>
-      </nav>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </nav>
+    <main>
+        <section class="heroSection d-flex align-items-center">
+            <div class="container">
+                <div class="row  align-items-center ">
+                    <div class="col-sm-12 diff-screen col-md-6">
+                        <span class="text-white text-uppercase hello-im">hello i'm</span>
+                        <h1 class="text-white fw-bold  ">web designer & <br> <span class="txt-green">developer</span>
+                        </h1>
+                        <p class="txt-gray  ">Hi I am Furqan, a passionate Web Developer based in the Pokistan.
+                            Welcome to my portfolio.</p>
+                        <a class="btn rounded-0 text-uppercase bg-green mybtn" href="#" role="button">view portfolio</a>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="image-container mx-auto"></div>
+                    </div>
+                </div>
+        </section>
+        <section id="aboutMe ">
+            <div class="container">
+                <div class="row aboutrow">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="intro">
+                            <p class="introduce text-uppercase txt-gray">Let me introduce</p>
+                            <h2 class="txt-green">About Myself</h2>
+                            <h3 class="text-white txt-center">A story of hardwork and preservance</h3>
+                            <p class="txt-gray text-center">Hi, I'm Furqan, a web developer and designer specializing in
+                                creating visually engaging, user-friendly websites. My expertise
+                                blends innovative design with robust functionality to bring your
+                                digital ideas to life.</p>
+                            <h3 class="text-white">Contact</h3>
+                            <p class="txt-gray text-center">Do you have fancy saying hi to me or you want to get started with
+                                your project and you need my help? Feel free to contact me.</p>
+                            <a href="#" class="txt-green mb-3">furqanshahzad134@gmail.com</a>
+                            <div><a class="btn rounded-0 text-uppercase bg-green mybtn" href="#" role="button">hire me</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="aboutimg d-flex align-items-center justify-content-center">
+                            <img src="/assets/images/about me.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="servies-section " class="mt-5" >
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-12 text-uppercase text-white text-center"><p class="mb-0">what i will do for you</p></div>
+                    <div class="col- text-uppercase txt-green text-center"><h2>services</h2></div>
+                </div>
+                <div class="row mt-3 ">
+                    <div class="col-sm-12 col-md-6 col-lg-4 hover-card ">
+                        <div class="card text-center mb-3 mx-auto bg-dark-blue py-4" style="width: 18rem;">
+                            <div class="card-body">
+                                <i class="fa-solid fa-desktop txt-green fs-1 d-block mb-4"></i>
+                                <span class="text-uppercase txt-gray">212 projects</span>
+                              <h5 class="card-title fs-4 text-uppercase text-white">web design</h5>
+                              <p class="card-text txt-gray">Offering tailored web design services to craft visually stunning user-friendly websites that enhance your brand's presence.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 hover-card">
+                        <div class="card text-center mb-3 mx-auto bg-dark-blue py-4" style="width: 18rem;">
+                            <div class="card-body">
+                                <i class="fa-solid fa-pen-ruler txt-green fs-1 d-block mb-4"></i>
+                                <span class="text-uppercase txt-gray">212 projects</span>
+                              <h5 class="card-title fs-4 text-uppercase text-white">ux design</h5>
+                              <p class="card-text txt-gray">Offering tailored web design services to craft visually stunning user-friendly websites that enhance your brand's presence.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 mx-auto hover-card">
+                        <div class="card text-center mb-3 mx-auto bg-dark-blue py-4" style="width: 18rem;">
+                            <div class="card-body">
+                                <i class="fa-solid fa-file-code txt-green fs-1 d-block mb-4"></i>
+                                <span class="text-uppercase txt-gray">212 projects</span>
+                              <h6 class="card-title fs-4 text-uppercase text-white">web development</h6>
+                              <p class="card-text txt-gray">Offering tailored web design services to craft visually stunning user-friendly websites that enhance your brand's presence.</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
