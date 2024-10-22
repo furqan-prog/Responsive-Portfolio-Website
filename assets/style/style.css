@@ -85,6 +85,12 @@ width: 2.2rem;
     background-color: var(--green-clr);
     color: var(--dark-blue-clr) !important;
 }
+.blogbtn:hover{
+    border: 1px solid var(--green-clr);
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
 
 
 
